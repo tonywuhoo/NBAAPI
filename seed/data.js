@@ -6,6 +6,7 @@ import teams from "./nbateams.json" assert { type: "json" }
 import fetch from 'node-fetch';
 import { promises as fsPromises } from 'fs';
 
+function doShit() {
 fetch('https://www.balldontlie.io/api/v1/players')
   .then(response => response.json())
   .then(data => {
@@ -30,4 +31,9 @@ async function insertData() {
   await db.close()
 } 
 
-insertData()
+  insertData()
+
+    
+}
+
+export default doShit
