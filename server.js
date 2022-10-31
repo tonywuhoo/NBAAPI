@@ -4,7 +4,6 @@ import logger from "morgan"
 import chalk from "chalk"
 import db from "./db/connection.js"
 import routes from "./routes/index.js"
-import doShit from "./seed/data.js"
 
 const app = express()
 const PORT = process.env.PORT || 3001
