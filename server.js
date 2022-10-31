@@ -6,8 +6,6 @@ import db from "./db/connection.js"
 import routes from "./routes/index.js"
 import doShit from "./seed/data.js"
 
-doShit()
-
 const app = express()
 const PORT = process.env.PORT || 3001
 
@@ -16,6 +14,7 @@ app.use(cors());
 app.use(logger("dev"));
 
 app.use("/", routes);
+
 
 db.on("connected", () => {
   console.clear();
