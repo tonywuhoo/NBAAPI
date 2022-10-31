@@ -12,7 +12,7 @@ fetch('https://www.balldontlie.io/api/v1/players')
   .then(data => {
     return data.data
   })
-  .then(data => fsPromises.writeFile("./nbaplayers.json", JSON.stringify((data))))
+  .then(data => fsPromises.writeFile("./seed/nbaplayers.json", JSON.stringify((data))))
   .catch(error => console.error(error))
 
   fetch('https://www.balldontlie.io/api/v1/teams')
@@ -20,7 +20,7 @@ fetch('https://www.balldontlie.io/api/v1/players')
   .then(data => {
     return data.data
   })
-  .then(data => fsPromises.writeFile("./nbateams.json", JSON.stringify((data))))
+  .then(data => fsPromises.writeFile("./seed/nbateams.json", JSON.stringify((data))))
   .catch(error => console.error(error))
 
 async function insertData() {
