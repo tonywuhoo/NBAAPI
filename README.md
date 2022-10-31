@@ -10,10 +10,10 @@ GET ENDPOINTS
 
 Request with no parameters:
 
-localhost:3001
+https://nbaapi-production.up.railway.app
 
-localhost:3001/players
+https://nbaapi-production.up.railway.app/players
 
-localhost:3001/teams
+https://nbaapi-production.up.railway.app/teams
 
-localhost:3001/players/"ENTER PLAYER LAST NAME:
+https://nbaapi-production.up.railway.app/players/"ENTER PLAYER LAST NAME HERE"
