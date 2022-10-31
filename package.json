@@ -117,4 +117,6 @@
     "url": "https://github.com/tonywuhoo/NBAAPI/issues"
   },
   "homepage": "https://github.com/tonywuhoo/NBAAPI#readme"
+  ,
+  "type": "module"
 }
