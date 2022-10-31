@@ -7,7 +7,7 @@ export async function getPlayers(request, response) {
     response.json(players)
   } catch (error) {
     console.error(error)
-    res.status(500).json({ error: error.message });
+    response.status(500).json({ error: error.message });
   }
 }
 
